@@ -6,14 +6,14 @@ package th.in.pureapp.dictionary.model;
 
 public class Word {
     private int id;
-    private String search,result,type,antonym,synonym,relate,define,classifier,sample,tag,language;
+    private String search,result,type,synonym,antonym,relate,define,classifier,sample,tag,language;
     public Word(int id, String search, String language) {
         this.id = id;
         this.search = search;
         this.language = language;
     }
 
-    public Word(int id, String search, String result, String type, String antonym, String synonym, String relate, String define, String classifier, String sample, String tag, String language) {
+    public Word(int id, String search, String result, String type, String synonym, String antonym, String relate, String define, String classifier, String sample, String tag, String language) {
         this.id = id;
         this.search = search;
         this.result = result;
