@@ -34,7 +34,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="กดแว่นขยายเพื่อหาคำศัพท์"
+            android:text="@string/press_magnifier" 
             android:id="@+id/textView" />
         <TextView
             android:layout_width="wrap_content"
@@ -42,6 +42,6 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:text="นาย ภัคพล พงษ์ทวี (07580028)\nฐานข้อมูลโดย lexitron.nectec.or.th" />
+            android:text="@string/credit_message" />
     </RelativeLayout>
 </RelativeLayout>

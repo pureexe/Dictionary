@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">Dictionary</string>
+
+    <string name="prefix_search">Word: </string>
+    <string name="prefix_result">Meaning: </string>
+    <string name="prefix_type">Type: </string>
+    <string name="prefix_synonym">Synonym: </string>
+    <string name="prefix_antonym">Antonym: </string>
+    <string name="prefix_relate">Relate: </string>
+    <string name="prefix_define">Define: </string>
+    <string name="prefix_classifier">Classifier: </string>
+    <string name="prefix_sample">Sample:\n</string>
+    <string name="prefix_tag">Tag: </string>
+
+    <string name="credit_message">Pakkapon Phongthawee (07580028)\nData by lexitron.nectec.or.th</string>
+    <string name="press_magnifier">Press the magnifier to search.</string>
+
+    <string name="type_abbr"> ABBR (Abbreviation)</string>
+    <string name="type_adj"> ADJ (Adjective)</string>
+    <string name="type_adv"> ADV (Adverb)</string>
+    <string name="type_aux"> AUX (Auxiliary verb)</string>
+    <string name="type_clas"> CLAS (Classifier)</string>
+    <string name="type_conj"> CONJ (Conjunction)</string>
+    <string name="type_det"> DET (Determiner)</string>
+    <string name="type_idm"> IDM (Idiom)</string>
+    <string name="type_int"> INT (Interjection)</string>
+    <string name="type_n"> N (Noun)</string>
+    <string name="type_phrv"> PHRV (Pharse verb)</string>
+    <string name="type_prep"> PREP (Preposition)</string>
+    <string name="type_prf"> PRF (Prefix)</string>
+    <string name="type_pron"> PRON (Pronoun)</string>
+    <string name="type_sl"> SL (Slang)</string>
+    <string name="type_suf"> SUF (Suffix)</string>
+    <string name="type_v"> V (verb)</string>
+    <string name="type_vi"> VI (Transitive verb)</string>
+    <string name="type_vt"> VT (Intransitive verb)</string>
+    <string name="type_vivt"> VI, VT (Intransitive and Transitive verb)</string>
+
 </resources>

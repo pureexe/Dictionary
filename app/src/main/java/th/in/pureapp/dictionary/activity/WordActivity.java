@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -37,19 +38,47 @@ public class WordActivity extends Activity {
         TextView sampleTextView = (TextView) findViewById(R.id.sample_textview);
         TextView tagTextView = (TextView) findViewById(R.id.tag_textview);
         if(result != null){
-            searchTextView.setText("คำค้นหา: "+result.getSearch());
-            resultTextView.setText("คำแปล: "+ result.getResult());
-            typeTextView.setText("ประเภทคำ: "+result.getType());
-            synonymTextView.setText("คำคล้ายกัน: "+result.getSynonym());
-            antonymTextView.setText("คำตรงข้าม: "+result.getAntonym());
-            relateTextView.setText("คำที่เกี่ยวข้อง: "+result.getRelate());
-            defineTextView.setText("ความหมาย: "+result.getDefine());
-            classifierTextView.setText("ลักษณะนาม: "+result.getClassifier());
-            sampleTextView.setText("ตัวอย่างประโยค: "+result.getSample());
-            tagTextView.setText("แท็ก: "+result.getTag());
+            setTextResult(searchTextView,result.getSearch(),getString(R.string.prefix_search));
+            setTextResult(resultTextView,result.getResult(),getString(R.string.prefix_result));
+            setTextResult(typeTextView,getTypeABBR(result.getType()),getString(R.string.prefix_type));
+            setTextResult(synonymTextView,result.getSynonym(),getString(R.string.prefix_synonym));
+            setTextResult(antonymTextView,result.getAntonym(),getString(R.string.prefix_antonym));
+            setTextResult(relateTextView,result.getRelate(),getString(R.string.prefix_relate));
+            setTextResult(defineTextView,result.getDefine(),getString(R.string.prefix_define));
+            setTextResult(classifierTextView,result.getClassifier(),getString(R.string.prefix_result));
+            setTextResult(sampleTextView,result.getSample(),getString(R.string.prefix_sample));
+            setTextResult(tagTextView,result.getTag(),getString(R.string.prefix_tag));
         }
     }
-
+    private void setTextResult(TextView textView, String data,String prefix){
+        if(data == null){
+            textView.setVisibility(View.GONE);
+        }else{
+            textView.setVisibility(View.VISIBLE);
+        }
+        textView.setText(prefix+" "+data);
+    }
+    private String getTypeABBR(String data){
+        if(data == null){
+            return null;
+        }
+        if(data.equals("vi,vt")){
+            return getString(R.string.type_vivt);
+        }
+        String out = getStringResourceByName("type_"+data.toLowerCase());
+        if(out != null){
+            return out;
+        }
+        return data;
+    }
+    private String getStringResourceByName(String aString) {
+        String packageName = getPackageName();
+        int resId = getResources().getIdentifier(aString, "string", packageName);
+        if(resId == 0){
+            return null;
+        }
+        return getString(resId);
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == android.R.id.home ){

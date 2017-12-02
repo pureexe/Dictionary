@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">พจนานุกรม</string>
+
+    <string name="prefix_search">คำค้นหา: </string>
+    <string name="prefix_result">คำแปล: </string>
+    <string name="prefix_type">ประเภทคำ: </string>
+    <string name="prefix_synonym">คำคล้ายกัน: </string>
+    <string name="prefix_antonym">คำตรงข้าม: </string>
+    <string name="prefix_relate">คำที่เกี่ยวข้อง: </string>
+    <string name="prefix_define">ความหมาย: </string>
+    <string name="prefix_classifier">ลักษณะนาม: </string>
+    <string name="prefix_sample">ตัวอย่างประโยค: </string>
+    <string name="prefix_tag">แท็ก: </string>
+
+    <string name="credit_message">นาย ภัคพล พงษ์ทวี (07580028)\nข้อมูลโดย lexitron.nectec.or.th</string>
+    <string name="press_magnifier">กดแว่นขยายเพื่อหาคำศัพท์</string>
+
+    <string name="type_abbr"> ABBR (ตัวย่อ)</string>
+    <string name="type_adj"> ADJ (คุณศัพท์)</string>
+    <string name="type_adv"> ADV (วิเศษณ์)</string>
+    <string name="type_aux"> AUX (กริยาช่วย)</string>
+    <string name="type_clas"> CLAS (ลักษณนาม)</string>
+    <string name="type_conj"> CONJ (คำสันธาน)</string>
+    <string name="type_det"> DET (คำบ่งชี้)</string>
+    <string name="type_idm"> IDM (สำนวน)</string>
+    <string name="type_int"> INT (อุทาน)</string>
+    <string name="type_n"> N (นาม)</string>
+    <string name="type_phrv"> PHRV (กริยาวลี)</string>
+    <string name="type_prep"> PREP (บุพบท)</string>
+    <string name="type_prf"> PRF (คำอุปสรรค)</string>
+    <string name="type_pron"> PRON (สรรพนาม)</string>
+    <string name="type_sl"> SL (แสลง)</string>
+    <string name="type_suf"> SUF (วิภัตติ)</string>
+    <string name="type_v"> V (คำกิริยา)</string>
+    <string name="type_vi"> VI (กริยาสกรรม)</string>
+    <string name="type_vt"> VT (กริยาอกรรม)</string>
+    <string name="type_vivt"> VI, VT (กิริยา อกรรมและสกรรม)</string>
+</resources>
