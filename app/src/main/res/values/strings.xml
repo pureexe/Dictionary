@@ -9,7 +9,7 @@
     <string name="prefix_relate">Relate: </string>
     <string name="prefix_define">Define: </string>
     <string name="prefix_classifier">Classifier: </string>
-    <string name="prefix_sample">Sample:\n</string>
+    <string name="prefix_sample">Sample: </string>
     <string name="prefix_tag">Tag: </string>
 
     <string name="credit_message">Pakkapon Phongthawee (07580028)\nData by lexitron.nectec.or.th</string>

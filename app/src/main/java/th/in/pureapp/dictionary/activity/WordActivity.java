@@ -45,7 +45,7 @@ public class WordActivity extends Activity {
             setTextResult(antonymTextView,result.getAntonym(),getString(R.string.prefix_antonym));
             setTextResult(relateTextView,result.getRelate(),getString(R.string.prefix_relate));
             setTextResult(defineTextView,result.getDefine(),getString(R.string.prefix_define));
-            setTextResult(classifierTextView,result.getClassifier(),getString(R.string.prefix_result));
+            setTextResult(classifierTextView,result.getClassifier(),getString(R.string.prefix_classifier));
             setTextResult(sampleTextView,result.getSample(),getString(R.string.prefix_sample));
             setTextResult(tagTextView,result.getTag(),getString(R.string.prefix_tag));
         }
