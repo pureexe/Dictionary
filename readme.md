@@ -4,4 +4,6 @@
 
 ขอบคุณข้อมูลโดย http://lexitron.nectec.or.th
 
+วีดีโอแนะนำ: https://youtu.be/DpP8NjAn-yI
+
 ดาวน์โหลด: https://play.google.com/store/apps/details?id=th.in.pureapp.dictionary
